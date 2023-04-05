@@ -22,47 +22,9 @@ body {
     opacity: 1; /* Show the elements when they have the "animate" class */
 }
 
-.device-notification {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #000;
-    z-index: 12;
-}
-
-.device-notification--message {
-    width: 70%;
-    margin: 30px 0 0 0;
-    font-weight: 700;
-    text-align: center;
-}
-
 @media (max-width: 767px) {
     body {
         align-content: space-around;
-    }
-}
-
-@media (max-width: 475px) {
-    .device-notification{
-        display: flex;
     }
 }
 
