@@ -35,13 +35,13 @@
 </head>
 <body>
     <h1>Suggest A Platform</h1>
-    <form action="https://formspree.io/f/xoqzkzgr" method="POST" enctype="multipart/form-data" class="magic">
+    <form action="https://formspree.io/f/xoqzkzgr" method="POST" class="magic">
         <label for="platformName">Platform Name:</label>
-        <input type="text" id="platformName" name="platformName" placeholder="Tiktok" required><br>
+        <input type="text" id="platformName" name="platformName" placeholder="Tiktok" autocomplete="off" required><br>
         <label for="dimensionSize">Dimension Size:</label>
-        <input type="text" id="dimensionSize" name="dimensionSize" placeholder="1080x1920" required><br>
+        <input type="text" id="dimensionSize" name="dimensionSize" placeholder="1080x1920" autocomplete="off" required><br>
         <label for="dimensionImage">Dimension Image URL:</label>
-        <input type="text" id="dimensionImage" name="dimensionImage" placeholder="https://via.placeholder.com/1080x1920" required><br>
+        <input type="text" id="dimensionImage" name="dimensionImage" placeholder="https://via.placeholder.com/1080x1920" autocomplete="off" required><br>
         <button type="submit">Submit</button>
         <button onclick="history.back()">Go Back</button>
     </form>
