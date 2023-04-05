@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pixel Finder - Get the dimensions quickly</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#00796b">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Show message for very small screens -->
+    <div class="device-notification">
+        <p class="device-notification--message">Please rotate your device to landscape or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <!-- Search -->
+	<div class="container magic">
+		<h1>Pixel Finder</h1>
+		<p>Enter a keyword to search for a dimension:</p>
+		<div class="search-container">
+			<input type="text" id="searchInput" placeholder="e.g. Facebook cover size" autocomplete="off">
+			<button id="searchBtn" onclick="searchDimensions(event)">Search</button>
+		</div>
+
+        <!-- P tag for results loaded from API/JavaScript -->
+		<p class="result" id="result"></p>
+        <button id="notWhatImLookingForBtn" style="display: none;">Not What I'm Looking For</button>
+        <div id="result-container"></div>
+	</div>
+
+    <!-- Theme toggle defualt to light -->
+    <div>
+        <div class="toggle-container">
+            <button id="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-sun"></i>
+            <span>Light Mode</span>
+            </button>
+            <a href="suggestion.html" rel="noopener noreferrer">Suggest a platform</a>
+        </div>      
+        
+        <div class="logo">
+            <p>Introducing Pixel Finder</p>
+            <img src="img/pixel-finder-logo-white.png" alt="Pixel Finder logo">
+            <p>Made with persistence 🤓</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var elements = document.querySelectorAll('.magic');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.add('animate');
+            }
+        });
+    </script>
+
+    <script src="js/search.js"></script>
+    <script src="js/accessible.js"></script>
+</body>
+</html>

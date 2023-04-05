@@ -1,0 +1,236 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #00796b;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.magic {
+    transform: scale(1.05)translateY(50%);
+    opacity: 0; /* Hide the elements initially */
+    transition: all 1s ease-in-out; /* Add a transition effect */
+}
+
+.animate {
+    transform: scale(1);
+    opacity: 1; /* Show the elements when they have the "animate" class */
+}
+
+.device-notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #000;
+    z-index: 12;
+}
+
+.device-notification--message {
+    width: 70%;
+    margin: 30px 0 0 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-content: space-around;
+    }
+}
+
+@media (max-width: 475px) {
+    .device-notification{
+        display: flex;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Dimensions Search - Light Theme */
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+  
+h1 {
+    font-size: 3em;
+    line-height: 0;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #009688;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0px);
+}
+  
+.logo img {
+    margin: 0 10px 0 10px;
+    max-width: 35px;
+    height: auto;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+.logo p {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+  
+  
+p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+  
+input[type="text"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    background-color: #fff;
+    color: #333;
+}
+  
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #00796b;
+}
+  
+.result {
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    color: #333;
+}
+
+#searchInput {
+    max-width: 250px;
+    transition: all 300ms ease;
+}
+  
+#searchInput.active {
+    box-shadow: -2px 0px 10px 0px rgba(0,0,0,0.1);
+}
+  
+
+/* CSS for Dimensions Search - Dark Theme */
+
+.container.dark {
+    background-color: #333;
+}
+  
+body.dark {
+    background-color: #111;
+}
+
+.dark {
+    background-color: #222;
+    color: #fff;
+}
+  
+.dark h1 {
+    color: #4caf50;
+}
+  
+.dark p {
+    color: #ccc;
+}
+  
+.dark input[type="text"] {
+    background-color: #262626;
+    color: #fff;
+}
+  
+.dark button {
+    background-color: #4caf50;
+}
+  
+.dark button:hover {
+    background-color: #388e3c;
+}
+  
+.dark .result {
+    color: #ccc;
+}
+
+.toggle-container {
+    text-align: center;
+    margin: 0 30px 30px 0;
+}
+
+.toggle-container a {
+    margin: 0 0 0 30px;
+}
+  
+#theme-toggle {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 28px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+  
+#theme-toggle:hover {
+    background-color: #026156;
+}
