@@ -13,6 +13,7 @@ Pixel Finder is a simple tool that allows you to quickly search for the dimensio
 - Option to suggest a new platform to be added https://xkevan19.github.io/Pixel-Finder/suggestion.html
 
 # Getting Started
+Home - https://xkevan19.github.io/Pixel-Finder/
 To use Pixel Finder, simply enter a keyword in the search bar and hit "Search" or tap the "Enter" button. If you don't see the platform you're looking for, click the "Suggest a platform" link to submit a suggestion.
 
 # Technologies Used
